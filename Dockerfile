@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y \
   git \
   python3-yaml
 
+RUN pip3 install importlib-resources
+
 RUN pip3 install pyyaml
 
 COPY feed.py /usr/bin/feed.py
